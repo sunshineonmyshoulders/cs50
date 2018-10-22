@@ -42,3 +42,7 @@ Como unir as mudanças feitas em branchs diferentes?
 ESTANDO NA BRANCH MASTER, BASTA DIZER QUAL BRANCH SERÁ MERGEADA xD
 
 git merge vrau
+
+------ FORKS -------
+
+Pega para si uma vesão de um repositório sem afetar a original
