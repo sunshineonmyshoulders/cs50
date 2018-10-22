@@ -1,0 +1,44 @@
+NOTES ABOUT CS50 Lectures
+
+git init -> iniciar um novo repositório
+git clone LINK -> fazer download de um repositório
+git status -> mostra informações atuais
+git add -> adiciona um arquivo para o próximo commit
+git commit -m "mensagem" -> fazer o commit com uma mensagem
+git push -> enviar o commit para o github
+git pull -> fazer o download do repositório no formato do repositório
+merge conflict -> quando dois arquivos foram modificados em locais diferentes, é necessário 
+verificar as mudanças e decidir qual será mantida, e commitar novamente
+git reset --hard -> volta para a versão ORIGINAL do repositório
+git reset --hard HASH -> volta para a versão da hash indicada
+git log -> mostra o histórico das modificações feitas no repositório atual
+git branch -> mostra todas as branchs
+git branch vrau -> cria uma branch chamada vrau
+git checkout vrau -> muda de local para a branch vrau
+git commit -am -> junta o add com o m para a mensagem
+
+
+----- BRANCHS / Lecture 1 ------
+Uma branch permite ter diferentes versões do mesmo projeto 
+que podem ser adicionadas ao "branch master" quando a 
+feature que esta sendo trabalhada numa branch diferente 
+ficar pronta. É como um "galho" que faz parte da mesma 
+árvore, mas que não atrapalhara a árvore.
+
+É muito útil quando há uma equipe trabalhando no mesmo 
+projeto.
+
+Head -> siginifca o branch que você esta trabalhando
+merge -> juntar duas branchs diferentes após as 
+modificações necessárias.
+
+git branch -> mostra todas as branchs
+git branch vrau -> cria uma branch chamada vrau
+git checkout vrau -> muda de local para a branch vrau
+git commit -am -> junta o add com o m para a mensagem
+
+Como unir as mudanças feitas em branchs diferentes?
+
+ESTANDO NA BRANCH MASTER, BASTA DIZER QUAL BRANCH SERÁ MERGEADA xD
+
+git merge vrau
