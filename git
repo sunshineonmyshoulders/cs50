@@ -46,3 +46,7 @@ git merge vrau
 ------ FORKS -------
 
 Pega para si uma vesão de um repositório sem afetar a original
+
+------ Pull request ------
+
+Solicita uma mudança no repositório, que poderá ser analisada por outros usuários

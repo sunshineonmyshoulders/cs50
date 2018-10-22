@@ -1,0 +1,13 @@
+--- FUNCTIONS ---
+
+função é um bloco de código que pode ser reutilizado.
+
+def para definir uma função seguida de seu nome, ex:
+
+def square(x):
+	return x * x
+
+for i in range(10):
+	print("{} square is {}".format(i, square(i)))
+
+{} é um placeholder para as variáveis que são passadas dentro de format 

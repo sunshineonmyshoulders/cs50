@@ -1,0 +1,13 @@
+É um framework escrito em python
+
+export FLASK_APP=app.py -> define que app.py será o arquivo principal
+
+O arquivo principal da aplicação é o app.py, que contém as rotas, que são uma espécie
+de direcionadores, que indicam para onde uma certa URL levará na aplciação, e assim que isso for feito, 
+para iniciar o servidor basta usar:
+
+flask run # no diretório em que o arquivo principal se encontra
+
+
+{{ vrau }} -> cria um placeholder dentro do html
+return render_template("index.html", headline=vrau) -> cria a variavel q recebe o valor que será mostrado no placeholder
