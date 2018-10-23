@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Somando as horas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</style>
+</head>
+<body>
+	<form class="cont" action="{{ url_for('result') }}" method="POST">
+		<input class="form-constrol" type="number" placeholder="hora" name="h1">
+		<input class="form-cosntrol" type="number" placeholder="minuto" name="m1">
+		<input class="form-cosntrol" type="number" placeholder="segundo" name="s1">
+		<br>
+		<input class="form-constrol" type="number" placeholder="hora" name="h2">
+		<input class="form-constrol" type="number" placeholder="minuto" name="m2">
+		<input class="form-constrol" type="number" placeholder="segundo" name="s2">
+		<br><input class="btn" type="submit">
+	</form>
+</body>
+</html>
