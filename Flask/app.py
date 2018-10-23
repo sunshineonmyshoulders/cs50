@@ -10,7 +10,7 @@ def index(): # essa função poderia ter qualquer nome
 
 @app.route("/var")
 def var(): # essa função poderia ter qualquer nome
-	names = ["alex", "pamela", "mayco"]
+	names = ["jose", "pamela", "mayco"]
 	v = ['1', '2' ,'3']
 	return render_template("index.html", names=names) 
 
@@ -24,4 +24,4 @@ def vrau():
 @app.route("/<int:num>") #  recebendo um valor por get
 def numero(num):
 	r = num * num
-	return f"<h1>A raiz quadrade de { num } é { r }</h1>"
+	return f"<h1>A raiz quadrada de { num } é { r }</h1>"
