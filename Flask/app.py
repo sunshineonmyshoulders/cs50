@@ -20,3 +20,8 @@ def vrau():
 	num2 = int(request.form.get("num2")) # utilizando a função int para converter para inteiro
 	result = num1 + num2
 	return render_template("hello.html", result=result) # render template recebe como argumento o arquivo html e as variáveis que serão impressas
+
+@app.route("/<int:num>") #  recebendo um valor por get
+def numero(num):
+	r = num * num
+	return f"<h1>A raiz quadrade de { num } é { r }</h1>"
