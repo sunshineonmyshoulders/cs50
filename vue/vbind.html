@@ -1,0 +1,94 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+<div id="app" class="container">
+<!--<input type="text" v-model="muda">-->
+<br>
+<a v-bind:href="botao.href" target="blank"><button v-bind:class="[botao.cor, botao.size, botao.font, botao.radius]" v-bind:style="botao.family">BOTÃO</button></a><br><br>
+<select v-model="botao.cor">
+	<option value="btn btn-primary">Btn-primary</option>
+	<option value="btn btn-danger">Btn-danger</option>
+	<option value="btn btn-success">Btn-success</option>
+	<option value="btn btn-warning">Btn-warning</option>
+	<option value="btn btn-info">Btn-info</option>
+	<option value="btn btn-light">Btn-Light</option>
+	<option value="btn btn-dark">Btn-Dark</option>
+</select>
+
+<select v-model="botao.size">
+	<option value="btn-sm">Small</option>
+	<option value="btn-md">Medium</option>	
+	<option value="btn-lg">Large</option>	
+</select>
+
+<select v-model="botao.font">
+	<option value="font-weight-bold">Bold</option>
+	<option value="font-weight-normal">Normal</option>
+	<option value="font-weight-light">Light</option>	
+	<option value="font-weight-italic">Italic</option>		
+</select>
+
+<select v-model="botao.family">
+	<option value="font-family: arial;">Arial</option>
+	<option value="font-family: Trebuchet MS">Trebuchet</option>
+	<option value="font-family: Helvetica">Helvetica</option>	
+	<option value="font-family: comic-sans">Comic Sans</option>		
+	<option value="font-family: open-sans">Open Sans</option>		
+</select>
+
+<select v-model="botao.radius">
+	<option value="rounded">rounded</option>
+	<option value="rounded-top">rounded-top</option>
+	<option value="rounded-right">rounded-right</option>	
+	<option value="rounded-bottom">rounded-bottom</option>		
+	<option value="rounded-left">rounded-left</option>		
+	<option value="rounded-circle">rounded-circle</option>		
+	<option value="rounded-0">rounded-0</option>		
+</select>
+
+
+<select v-model="botao.href">
+	<option value="http://www.google.com">Google</option>
+	<option value="http://www.facebook.com">Facebook</option>
+	<option value="http://www.uol.com.br">Uol</option>	
+</select>
+
+<br><br>
+
+<h3>Mudanças aplicadas</h3> 
+
+<li> <b>Botao:</b> {{ botao.cor }}</li>
+<li> <b>Tamanho:</b> {{ botao.size }}</li>
+<li> <b>Fonte size:</b> {{ botao.font }}</li>
+<li> <b> Fonte family: </b> {{ botao.family }}</li>
+<li> <b>Botao radius:</b> {{ botao.radius }}</li>
+<li> <b>Link:</b> {{ botao.href }}</li>
+
+
+</div>
+
+
+
+
+
+<script>
+
+var app = new Vue ({
+	el: '#app',
+	data: {
+		botao: { 
+			cor: '',
+			size: '',
+			font: '',
+			radius: '',
+			family: '',
+			href: ''
+		}
+	}	
+});
+
+</script>
+
+
