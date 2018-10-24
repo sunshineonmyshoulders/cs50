@@ -1,0 +1,29 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+<div id="app">
+	Nome: <input type="text" v-model="nome"><br>
+	Telefone: <input type="text" v-model="telefone"><br>
+	E-mail: <input type="text" v-model="email"><br>
+	Idade: <input type="idade" v-model="idade"><br>
+
+	<br>
+	Nome: {{ nome }}<br>
+	Telefone: {{ telefone }}<br>
+	E-mail: {{ email }}<br>
+	Idade: {{ idade }}
+</div>
+
+<script>
+
+var app = new Vue ({
+	el: '#app',
+	data: {
+		nome: '',
+		telefone: '',
+		email: '',
+		idade: '',
+	}	
+});
+
+</script>

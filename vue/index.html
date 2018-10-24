@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+  <p>{{ message }}</p> <!-- Placeholder para o valor da variável message -->
+  <input v-model="message"> <!-- recebe o valor do input e adiciona a variável message -->
+</div>
+
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+  {{ dado }}
+  <input name="dado" v-model="dado" placeholder="adicione"> <!-- recebe o valor do input e adiciona a variável message -->
+  <button v-on:click="listAdd">Adicionar</button>
+
+</div>
+
+<script>
+
+var app = new Vue({
+  el: '#app', /* EL de elemente e define o id, que é o id do elemento que esta no html */
+  data: { /* Onde ficam as variáveis */
+    message: 'Olá Vue!' /*Variável message que recebe o valor Olá vue*/
+  }
+})
+
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+  	dado: "vrau",
+    todos: [
+      { text: 'Aprender JavaScript' }
+    ]
+  },
+  methods: {
+    listAdd: function () {
+      this.todos.push({text:name.dado})
+    }
+  }
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+<div id="app">
+		<ul>
+			<li v-for="(item, index) in linguagens"> 
+			{{ index }} -> {{ item.nome }}
+			</li>
+		</ul>
+</div>
+
+<script>
+
+var app = new Vue ({
+	el: '#app',
+	data: {
+		linguagens: [
+		{ nome: 'PHP'},
+		{ nome: 'Javascript'},
+		{ nome: 'Python'}
+		]
+	}	
+});
+
+</script>

@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+<div id="app">
+	<div v-if="user.id == 2">
+		Id: {{ user.id }}<br>
+		Nome: {{ user.nome }}<br>
+		Cor: {{ user.cor }}
+	</div>
+	<div v-else>
+		Não é o id 1
+	</div>
+</div>
+
+<script>
+
+var app = new Vue ({
+	el: '#app',
+	data: {
+		user: {
+			id: '1',
+			nome: 'jose',
+			cor: 'azul'
+		}
+	}
+});
+
+</script>

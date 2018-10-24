@@ -1,0 +1,11 @@
+Diretivas
+
+v-for, v-model, v-if, v-else, v-show
+
+Servem para indicar algo que será feito no html
+
+v-show -> mostrar ou esconder elementos, mas que estão no código
+v-if -> condicional e não mostra nada no html
+v-model -> receber dados em tempo real de forms por ex
+v-bind -> modificar atributos html ex: src, alt, title, classes, ids
+Pode-se usar : , que é um short code para v-bind
